@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+
+  web:
+    build: ./emenu_backend
+    command: sh ./docker-entrypoint.sh
+    volumes:
+      - emenu_backend:/usr/src/emenu_backend/
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - redis
+
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=hello_django_dev
+
+  redis:
+    container_name: redis
+    image: redis:alpine
+
+  celery:
+    build: ./emenu_backend
+    command: celery -A emenu worker -l info
+    volumes:
+      - emenu_backend:/usr/src/emenu_backend/
+    depends_on:
+      - redis
+    env_file:
+      - ./.env.dev
+
+  celery-beat:
+    build: ./emenu_backend
+    command: celery -A emenu beat -l info
+    volumes:
+      - emenu_backend:/usr/src/emenu_backend/
+    depends_on:
+      - redis
+    env_file:
+      - ./.env.dev
+
+volumes:
+  emenu_backend:
+  postgres_data:

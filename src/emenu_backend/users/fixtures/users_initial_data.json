@@ -1,0 +1,40 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$xwkHImJUpiKR$63N4Pw8cvgR3YH13/OaKGOy4CSUL9UJSKIlWW4Wav/s=",
+        "last_login": "2021-01-23T22:23:07.711Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-23T22:20:55.653Z",
+        "email": "bob@emenu.com",
+        "spouse_name": "",
+        "date_of_birth": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$S1icfMP99pwR$gXpzvOnkbRcMmpO/zjF8oNVBLOim8frp1MjA7Grn9wg=",
+        "last_login": "2021-01-23T22:21:12.670Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-23T22:21:12.488Z",
+        "email": "alice@emenu.com",
+        "spouse_name": "",
+        "date_of_birth": null,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

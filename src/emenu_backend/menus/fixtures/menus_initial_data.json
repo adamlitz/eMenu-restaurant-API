@@ -1,0 +1,353 @@
+[
+{
+    "model": "menus.menu",
+    "pk": "French menu",
+    "fields": {
+        "description": "La carte",
+        "created": "2021-01-23T18:51:02.413Z",
+        "updated": "2021-01-23T18:51:02.413Z"
+    }
+},
+{
+    "model": "menus.menu",
+    "pk": "German menu",
+    "fields": {
+        "description": "Classic german dishes",
+        "created": "2021-01-23T18:57:18.678Z",
+        "updated": "2021-01-23T18:57:18.678Z"
+    }
+},
+{
+    "model": "menus.menu",
+    "pk": "Italian Menu",
+    "fields": {
+        "description": "Papa Gregorio` Late night Pizza",
+        "created": "2021-01-23T18:40:43.557Z",
+        "updated": "2021-01-23T21:59:57.214Z"
+    }
+},
+{
+    "model": "menus.menu",
+    "pk": "Scottish menu",
+    "fields": {
+        "description": "2015 Epcot Food and Wine Festival Scotland Booth Menu",
+        "created": "2021-01-23T16:25:45.915Z",
+        "updated": "2021-01-23T19:35:10.678Z"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 1,
+    "fields": {
+        "name": "Haggis with neeps and tatties",
+        "menu": "Scottish menu",
+        "description": "Traditional Haggis with rutabaga and mashed potatoes",
+        "price": "4.97",
+        "preparation_time": "00:00:30",
+        "is_vegetarian": false,
+        "created": "2021-01-23T16:29:32.312Z",
+        "updated": "2021-01-23T19:35:10.661Z",
+        "image": "dishes-images/haggis.jpg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 2,
+    "fields": {
+        "name": "Fresh potato pancake with Scottish smoked salmon and herb sour cream",
+        "menu": "Scottish menu",
+        "description": "Gluten-Free, DDP Snack Eligible",
+        "price": "4.25",
+        "preparation_time": "00:00:35",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:30:36.526Z",
+        "updated": "2021-01-23T18:30:36.526Z",
+        "image": "dishes-images/8251610d54709a5aff7bfd9bb94b0bdc.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 3,
+    "fields": {
+        "name": "Seared sea scallop with spinach-cheddar gratin and crispy bacon",
+        "menu": "Scottish menu",
+        "description": "Gluten-Free, DDP Snack Eligible",
+        "price": "4.75",
+        "preparation_time": "00:00:45",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:34:18.647Z",
+        "updated": "2021-01-23T18:34:18.647Z",
+        "image": "dishes-images/index.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 4,
+    "fields": {
+        "name": "The Tipsy Laird: Whiskey-soaked cake with lemon cream and toasted oats",
+        "menu": "Scottish menu",
+        "description": "DDP Snack Eligible",
+        "price": "3.25",
+        "preparation_time": "00:01:15",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:35:27.238Z",
+        "updated": "2021-01-23T18:35:27.238Z",
+        "image": "dishes-images/tumblr_nwu5vkTh4A1rj31b0o1_1280.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 5,
+    "fields": {
+        "name": "Brew Dog Punk Ale",
+        "menu": "Scottish menu",
+        "description": "Beer",
+        "price": "3.75",
+        "preparation_time": "00:00:00",
+        "is_vegetarian": false,
+        "created": "2021-01-23T18:37:40.094Z",
+        "updated": "2021-01-23T18:37:40.094Z",
+        "image": "dishes-images/indeerx.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 7,
+    "fields": {
+        "name": "Margherita",
+        "menu": "Italian Menu",
+        "description": "Our most popular pizza – and the one by which all pizzerias should be judged.\r\n\r\nThe Margherita should be the perfect balance of salty dough, sweet tomato sauce, creamy fior di latte mozzarella & aromatic basil.\r\n\r\nIt is easy to write off the Margherita as the “vanilla” of pizza options – but this would to underestimate the perfection of a great Margherita. This is the true pizza connoisseur’s choice.",
+        "price": "25.00",
+        "preparation_time": "00:02:20",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:43:50.940Z",
+        "updated": "2021-01-23T18:43:50.940Z",
+        "image": "dish.jpg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 8,
+    "fields": {
+        "name": "Sapori di Sicilia",
+        "menu": "Italian Menu",
+        "description": "Selection of Sicilian cured meats & cheese, anchovies, olives, caper berries & sundried tomatoes served with homemade bread. Available for two or four people",
+        "price": "12.00",
+        "preparation_time": "00:01:08",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:47:31.902Z",
+        "updated": "2021-01-23T18:47:31.902Z",
+        "image": "dishes-images/Cannoli-Sicilia.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 9,
+    "fields": {
+        "name": "Crudo e Bufala",
+        "menu": "Italian Menu",
+        "description": "Focaccia served with Parma ham, buffalo mozzarella & fresh basil",
+        "price": "25.00",
+        "preparation_time": "00:00:45",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:48:45.870Z",
+        "updated": "2021-01-23T18:48:45.870Z",
+        "image": "dishes-images/insssdex.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 10,
+    "fields": {
+        "name": "Bruschetta Pomodoro e Aglio",
+        "menu": "Italian Menu",
+        "description": "Cherry tomatoes seasoned with oil & oregano, garlic & fresh basil on homemade bread with rocket salad",
+        "price": "45.00",
+        "preparation_time": "00:00:12",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:49:30.779Z",
+        "updated": "2021-01-23T18:49:30.779Z",
+        "image": "dishes-images/adddass22.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 11,
+    "fields": {
+        "name": "Les Raviolis Vapeurs",
+        "menu": "French menu",
+        "description": "calamar, céleri, châtaigne d'eau, curry",
+        "price": "6.50",
+        "preparation_time": "00:01:40",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:52:05.454Z",
+        "updated": "2021-01-23T18:52:05.454Z",
+        "image": "dishes-images/as223sx.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 12,
+    "fields": {
+        "name": "Les Frits",
+        "menu": "French menu",
+        "description": "Fish and chips",
+        "price": "2.50",
+        "preparation_time": "00:00:30",
+        "is_vegetarian": false,
+        "created": "2021-01-23T18:53:12.277Z",
+        "updated": "2021-01-23T18:53:12.277Z",
+        "image": "dishes-images/ssa223.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 13,
+    "fields": {
+        "name": "Les raviolis grillés",
+        "menu": "French menu",
+        "description": "Dimsum diète",
+        "price": "15.50",
+        "preparation_time": "00:00:55",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:54:08.321Z",
+        "updated": "2021-01-23T18:54:08.321Z",
+        "image": "dishes-images/we2323aq.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 14,
+    "fields": {
+        "name": "Muscadet (blanc)",
+        "menu": "French menu",
+        "description": "White vine",
+        "price": "19.99",
+        "preparation_time": "00:00:00",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:54:55.378Z",
+        "updated": "2021-01-23T18:54:55.378Z",
+        "image": "dishes-images/muscadet-blanc-sevre-et-maine-bichot.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 15,
+    "fields": {
+        "name": "Champagne",
+        "menu": "French menu",
+        "description": "75cl",
+        "price": "39.99",
+        "preparation_time": "00:00:00",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:55:54.791Z",
+        "updated": "2021-01-23T18:55:54.791Z",
+        "image": "dishes-images/xc2w.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 16,
+    "fields": {
+        "name": "Dill Potatoes with Quark (Pellkartoffel mit Dill und Quark)",
+        "menu": "German menu",
+        "description": "Potatoes in their jackets with quark is a traditional dish handed down for generations in families in Germany.",
+        "price": "12.00",
+        "preparation_time": "00:00:56",
+        "is_vegetarian": true,
+        "created": "2021-01-23T18:58:29.898Z",
+        "updated": "2021-01-23T18:58:29.898Z",
+        "image": "dishes-images/sxcz2.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 17,
+    "fields": {
+        "name": "Sweet Vanilla Dumplings(Germknödel)",
+        "menu": "German menu",
+        "description": "Germknödel are similar to Dampfnudeln except that they are boiled in salted water or steamed over hot water. They are filled with Pflaumenmus (plum jam) and garnished with melted butter or vanilla sauce.",
+        "price": "22.00",
+        "preparation_time": "00:00:23",
+        "is_vegetarian": true,
+        "created": "2021-01-23T19:00:26.652Z",
+        "updated": "2021-01-23T19:00:26.652Z",
+        "image": "dishes-images/204995.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 18,
+    "fields": {
+        "name": "Falscher Hase (Falscher Hase)",
+        "menu": "German menu",
+        "description": "While this means “false hare/rabbit”, the dish is actually a meat loaf (Hackbraten) that is made with ground pork and beef, breadcrumbs, eggs, salt and pepper. It is served with potatoes and gravy. Sometimes a boiled egg is placed in the center of the meat mixture so that it makes a nice surprise when you cut the meatloaf.",
+        "price": "8.00",
+        "preparation_time": "00:00:33",
+        "is_vegetarian": false,
+        "created": "2021-01-23T19:01:37.361Z",
+        "updated": "2021-01-23T19:01:37.361Z",
+        "image": "dishes-images/falscher-hase.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 19,
+    "fields": {
+        "name": "Kassler Rippchen (Kassler Rippchen)",
+        "menu": "German menu",
+        "description": "Smoked pork chops. Kassler does not come from the city of Kassel but was named after a butcher from Berlin by the name of Cassel at the end of the 19th century. They are served with sauerkraut and/ or mashed potatoes.",
+        "price": "12.00",
+        "preparation_time": "00:00:59",
+        "is_vegetarian": false,
+        "created": "2021-01-23T19:02:41.470Z",
+        "updated": "2021-01-23T19:02:41.470Z",
+        "image": "dishes-images/800_KASSLER_CHOPS1.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 20,
+    "fields": {
+        "name": "Meat balls (Frikadellen)",
+        "menu": "German menu",
+        "description": "This is a generic term for a meat ball made from pork or beef or a combination of both. The words Buletten (Berlin), Klopse (Eastern Prussia), Fleischpflanzerl and Fleischküchle (Bavaria) are also used. They are fried and eaten hot although they also taste delicious when cold.",
+        "price": "19.00",
+        "preparation_time": "00:02:25",
+        "is_vegetarian": false,
+        "created": "2021-01-23T19:03:34.378Z",
+        "updated": "2021-01-23T19:03:34.378Z",
+        "image": "dishes-images/omas-beste-frikadellen.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 21,
+    "fields": {
+        "name": "Pellkartoffel (Pellkartoffel)",
+        "menu": "German menu",
+        "description": "Potatoes are boiled in their skins and served with butter and/or Quark.",
+        "price": "3.00",
+        "preparation_time": "00:00:15",
+        "is_vegetarian": false,
+        "created": "2021-01-23T19:04:46.045Z",
+        "updated": "2021-01-23T19:04:46.045Z",
+        "image": "dishes-images/pellkartoffeln-kochen-b.jpeg"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 22,
+    "fields": {
+        "name": "Pork Knuckles (Schweinshaxen)",
+        "menu": "German menu",
+        "description": "This is also known as Eisbein. It is the German name for a culinary dish involving the lower part of hams hocks. It is also known as Hachse, Hechse, Haxe, Hämsche, Bötel or Stelze.",
+        "price": "7.00",
+        "preparation_time": "00:00:17",
+        "is_vegetarian": false,
+        "created": "2021-01-23T19:05:23.859Z",
+        "updated": "2021-01-23T19:05:23.859Z",
+        "image": "dishes-images/indwexex.jpeg"
+    }
+}
+]
