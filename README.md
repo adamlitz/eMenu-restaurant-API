@@ -192,4 +192,4 @@ Search for menu with letter 's' in the name:
     localhost:8000/menus/?search=s
 Search for menus created between 2021-01-24 23:35 and 2021-01-28 23:35:
 
-    localhost:8000/menus/?created_after=2021-01-24+23%3A35&created_before=2021-01-28+23%3A35&updated_after=&updated_before=
+    localhost:8000/menus/?created_after=2021-01-24 23:35&created_before=2021-01-25 23:36&updated_after=&updated_before=
