@@ -152,7 +152,7 @@ Use one of the existing account:
 
     email: alice@emenu.com
 
-    password: example 123
+    password: example123
 
   
 
