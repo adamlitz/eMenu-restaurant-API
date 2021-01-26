@@ -181,6 +181,7 @@ When you are logged in, you can add new menus and dishes, and see all the detail
     localhost:8000/dishes/
 
 **Example API calls with filters:**
+
 Order menus by name in descending order:
 
     localhost:8000/menus/?ordering=-name
@@ -190,6 +191,6 @@ Search for menu with word 'Italian' in the name:
 Search for menu with letter 's' in the name:
 
     localhost:8000/menus/?search=s
-Search for menus created between 2021-01-24 23:35 and 2021-01-28 23:35:
+Search for menus created between two dates:
 
     localhost:8000/menus/?created_after=2021-01-24 23:35&created_before=2021-01-25 23:36&updated_after=&updated_before=
