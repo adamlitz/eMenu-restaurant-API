@@ -70,7 +70,7 @@ class DishViewSet(viewsets.ModelViewSet):
     """
     A viewset for listing, editing and deleting dishes
     """
-    queryset = Dish.objects.all()
+    queryset = Dish.objects.select_related('menu')
     serializer_class = DishSerializer
 
     # Permissions config

@@ -2,7 +2,7 @@
 FROM python:3.8.3-alpine
 
 # set work directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/emenu_backend
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
