@@ -3,7 +3,7 @@ version: '3.7'
 services:
   web:
     build: ./emenu_backend
-    command: sh ./docker-entrypoint.sh
+    command: sh docker-entrypoint.sh
     volumes:
       - ./emenu_backend/:/usr/src/emenu_backend/
     ports:

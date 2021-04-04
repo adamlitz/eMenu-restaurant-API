@@ -23,6 +23,9 @@ class MenuViewSet(viewsets.ModelViewSet):
     queryset = Menu.objects.annotate(dishes_count=Count('dishes'))
     serializer_class = MenuSerializer
 
+    # URL config
+    lookup_field = 'slug'
+
     # Filters config
     filter_backends = [DjangoFilterBackend, OrderingFilter, SearchFilter]
     filter_class = DateFilter
@@ -72,6 +75,9 @@ class DishViewSet(viewsets.ModelViewSet):
     """
     queryset = Dish.objects.select_related('menu')
     serializer_class = DishSerializer
+
+    # URL config
+    lookup_field = 'slug'
 
     # Permissions config
     permission_classes = [permissions.IsAuthenticated]
