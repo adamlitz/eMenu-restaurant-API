@@ -132,7 +132,7 @@ In the **src/** directory, where docker-compose.yaml file is, run:
     localhost:8000/menus/
 **Example menu`s detail card:**
 
-    localhost:8000/menus/Italian Menu/
+    localhost:8000/menus/italian-menu/
 
 **Logging in:**
 
