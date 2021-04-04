@@ -1,4 +1,5 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 from datetime import timedelta
 
 
@@ -7,9 +8,17 @@ class Menu(models.Model):
     description = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    slug = models.SlugField(max_length=150, null=True, blank=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        """
+        Create a slug field
+        """
+        self.slug = slugify(self.name)
+        super(Menu, self).save(*args, **kwargs)
 
 
 class Dish(models.Model):
@@ -26,6 +35,14 @@ class Dish(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='dishes-images/', default='dish.jpg', blank=True)
+    slug = models.SlugField(max_length=150, null=True, blank=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        """
+        Create a slug field
+        """
+        self.slug = slugify(self.name)
+        super(Dish, self).save(*args, **kwargs)

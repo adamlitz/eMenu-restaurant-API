@@ -1,18 +1,18 @@
 version: '3.7'
 
 services:
-
   web:
     build: ./emenu_backend
-    command: sh ./docker-entrypoint.sh
+    command: sh docker-entrypoint.sh
     volumes:
-      - emenu_backend:/usr/src/emenu_backend/
+      - ./emenu_backend/:/usr/src/emenu_backend/
     ports:
       - 8000:8000
     env_file:
       - ./.env.dev
     depends_on:
       - redis
+      - db
 
   db:
     image: postgres:13.0-alpine
@@ -31,7 +31,7 @@ services:
     build: ./emenu_backend
     command: celery -A emenu worker -l info
     volumes:
-      - emenu_backend:/usr/src/emenu_backend/
+      - ./emenu_backend/:/usr/src/emenu_backend/
     depends_on:
       - redis
     env_file:
@@ -41,12 +41,11 @@ services:
     build: ./emenu_backend
     command: celery -A emenu beat -l info
     volumes:
-      - emenu_backend:/usr/src/emenu_backend/
+      - ./emenu_backend/:/usr/src/emenu_backend/
     depends_on:
       - redis
     env_file:
       - ./.env.dev
 
 volumes:
-  emenu_backend:
   postgres_data:
