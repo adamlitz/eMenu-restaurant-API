@@ -41,4 +41,4 @@ def send_email(**kwargs) -> str:
         except SMTPException as e:
             return f"Emails haven't been sent: {e}"
 
-    return f"Emails have been sent"
+    return "Emails have been sent"

@@ -5,7 +5,8 @@
     "fields": {
         "description": "La carte",
         "created": "2021-01-23T18:51:02.413Z",
-        "updated": "2021-01-23T18:51:02.413Z"
+        "updated": "2021-04-04T11:50:08.554Z",
+        "slug": "french-menu"
     }
 },
 {
@@ -14,7 +15,8 @@
     "fields": {
         "description": "Classic german dishes",
         "created": "2021-01-23T18:57:18.678Z",
-        "updated": "2021-01-23T18:57:18.678Z"
+        "updated": "2021-04-04T11:50:08.526Z",
+        "slug": "german-menu"
     }
 },
 {
@@ -23,7 +25,28 @@
     "fields": {
         "description": "Papa Gregorio` Late night Pizza",
         "created": "2021-01-23T18:40:43.557Z",
-        "updated": "2021-01-23T21:59:57.214Z"
+        "updated": "2021-04-04T11:50:08.537Z",
+        "slug": "italian-menu"
+    }
+},
+{
+    "model": "menus.menu",
+    "pk": "My kek",
+    "fields": {
+        "description": "kek",
+        "created": "2021-04-04T11:41:40.605Z",
+        "updated": "2021-04-04T11:50:08.558Z",
+        "slug": "my-kek"
+    }
+},
+{
+    "model": "menus.menu",
+    "pk": "Polish menu",
+    "fields": {
+        "description": "blabla",
+        "created": "2021-02-24T10:31:24.318Z",
+        "updated": "2021-04-04T11:50:08.548Z",
+        "slug": "polish-menu"
     }
 },
 {
@@ -32,7 +55,8 @@
     "fields": {
         "description": "2015 Epcot Food and Wine Festival Scotland Booth Menu",
         "created": "2021-01-23T16:25:45.915Z",
-        "updated": "2021-01-23T19:35:10.678Z"
+        "updated": "2021-04-04T11:50:08.542Z",
+        "slug": "scottish-menu"
     }
 },
 {
@@ -46,8 +70,9 @@
         "preparation_time": "00:00:30",
         "is_vegetarian": false,
         "created": "2021-01-23T16:29:32.312Z",
-        "updated": "2021-01-23T19:35:10.661Z",
-        "image": "dishes-images/haggis.jpg"
+        "updated": "2021-04-04T11:51:11.178Z",
+        "image": "dishes-images/haggis.jpg",
+        "slug": "haggis-with-neeps-and-tatties"
     }
 },
 {
@@ -61,8 +86,9 @@
         "preparation_time": "00:00:35",
         "is_vegetarian": true,
         "created": "2021-01-23T18:30:36.526Z",
-        "updated": "2021-01-23T18:30:36.526Z",
-        "image": "dishes-images/8251610d54709a5aff7bfd9bb94b0bdc.jpeg"
+        "updated": "2021-04-04T11:51:11.185Z",
+        "image": "dishes-images/8251610d54709a5aff7bfd9bb94b0bdc.jpeg",
+        "slug": "fresh-potato-pancake-with-scottish-smoked-salmon-and-herb-sour-cream"
     }
 },
 {
@@ -76,8 +102,9 @@
         "preparation_time": "00:00:45",
         "is_vegetarian": true,
         "created": "2021-01-23T18:34:18.647Z",
-        "updated": "2021-01-23T18:34:18.647Z",
-        "image": "dishes-images/index.jpeg"
+        "updated": "2021-04-04T11:51:11.190Z",
+        "image": "dishes-images/index.jpeg",
+        "slug": "seared-sea-scallop-with-spinach-cheddar-gratin-and-crispy-bacon"
     }
 },
 {
@@ -91,8 +118,9 @@
         "preparation_time": "00:01:15",
         "is_vegetarian": true,
         "created": "2021-01-23T18:35:27.238Z",
-        "updated": "2021-01-23T18:35:27.238Z",
-        "image": "dishes-images/tumblr_nwu5vkTh4A1rj31b0o1_1280.jpeg"
+        "updated": "2021-04-04T11:51:11.196Z",
+        "image": "dishes-images/tumblr_nwu5vkTh4A1rj31b0o1_1280.jpeg",
+        "slug": "the-tipsy-laird-whiskey-soaked-cake-with-lemon-cream-and-toasted-oats"
     }
 },
 {
@@ -106,8 +134,9 @@
         "preparation_time": "00:00:00",
         "is_vegetarian": false,
         "created": "2021-01-23T18:37:40.094Z",
-        "updated": "2021-01-23T18:37:40.094Z",
-        "image": "dishes-images/indeerx.jpeg"
+        "updated": "2021-04-04T11:51:11.202Z",
+        "image": "dishes-images/indeerx.jpeg",
+        "slug": "brew-dog-punk-ale"
     }
 },
 {
@@ -121,8 +150,9 @@
         "preparation_time": "00:02:20",
         "is_vegetarian": true,
         "created": "2021-01-23T18:43:50.940Z",
-        "updated": "2021-01-23T18:43:50.940Z",
-        "image": "dish.jpg"
+        "updated": "2021-04-04T11:51:11.207Z",
+        "image": "dish.jpg",
+        "slug": "margherita"
     }
 },
 {
@@ -136,8 +166,9 @@
         "preparation_time": "00:01:08",
         "is_vegetarian": true,
         "created": "2021-01-23T18:47:31.902Z",
-        "updated": "2021-01-23T18:47:31.902Z",
-        "image": "dishes-images/Cannoli-Sicilia.jpeg"
+        "updated": "2021-04-04T11:51:11.212Z",
+        "image": "dishes-images/Cannoli-Sicilia.jpeg",
+        "slug": "sapori-di-sicilia"
     }
 },
 {
@@ -151,8 +182,9 @@
         "preparation_time": "00:00:45",
         "is_vegetarian": true,
         "created": "2021-01-23T18:48:45.870Z",
-        "updated": "2021-01-23T18:48:45.870Z",
-        "image": "dishes-images/insssdex.jpeg"
+        "updated": "2021-04-04T11:51:11.217Z",
+        "image": "dishes-images/insssdex.jpeg",
+        "slug": "crudo-e-bufala"
     }
 },
 {
@@ -166,8 +198,9 @@
         "preparation_time": "00:00:12",
         "is_vegetarian": true,
         "created": "2021-01-23T18:49:30.779Z",
-        "updated": "2021-01-23T18:49:30.779Z",
-        "image": "dishes-images/adddass22.jpeg"
+        "updated": "2021-04-04T11:51:11.222Z",
+        "image": "dishes-images/adddass22.jpeg",
+        "slug": "bruschetta-pomodoro-e-aglio"
     }
 },
 {
@@ -181,8 +214,9 @@
         "preparation_time": "00:01:40",
         "is_vegetarian": true,
         "created": "2021-01-23T18:52:05.454Z",
-        "updated": "2021-01-23T18:52:05.454Z",
-        "image": "dishes-images/as223sx.jpeg"
+        "updated": "2021-04-04T11:51:11.226Z",
+        "image": "dishes-images/as223sx.jpeg",
+        "slug": "les-raviolis-vapeurs"
     }
 },
 {
@@ -196,8 +230,9 @@
         "preparation_time": "00:00:30",
         "is_vegetarian": false,
         "created": "2021-01-23T18:53:12.277Z",
-        "updated": "2021-01-23T18:53:12.277Z",
-        "image": "dishes-images/ssa223.jpeg"
+        "updated": "2021-04-04T11:51:11.231Z",
+        "image": "dishes-images/ssa223.jpeg",
+        "slug": "les-frits"
     }
 },
 {
@@ -211,8 +246,9 @@
         "preparation_time": "00:00:55",
         "is_vegetarian": true,
         "created": "2021-01-23T18:54:08.321Z",
-        "updated": "2021-01-23T18:54:08.321Z",
-        "image": "dishes-images/we2323aq.jpeg"
+        "updated": "2021-04-04T11:51:11.236Z",
+        "image": "dishes-images/we2323aq.jpeg",
+        "slug": "les-raviolis-grilles"
     }
 },
 {
@@ -226,8 +262,9 @@
         "preparation_time": "00:00:00",
         "is_vegetarian": true,
         "created": "2021-01-23T18:54:55.378Z",
-        "updated": "2021-01-23T18:54:55.378Z",
-        "image": "dishes-images/muscadet-blanc-sevre-et-maine-bichot.jpeg"
+        "updated": "2021-04-04T11:51:11.241Z",
+        "image": "dishes-images/muscadet-blanc-sevre-et-maine-bichot.jpeg",
+        "slug": "muscadet-blanc"
     }
 },
 {
@@ -241,8 +278,9 @@
         "preparation_time": "00:00:00",
         "is_vegetarian": true,
         "created": "2021-01-23T18:55:54.791Z",
-        "updated": "2021-01-23T18:55:54.791Z",
-        "image": "dishes-images/xc2w.jpeg"
+        "updated": "2021-04-04T11:51:11.246Z",
+        "image": "dishes-images/xc2w.jpeg",
+        "slug": "champagne"
     }
 },
 {
@@ -256,8 +294,9 @@
         "preparation_time": "00:00:56",
         "is_vegetarian": true,
         "created": "2021-01-23T18:58:29.898Z",
-        "updated": "2021-01-23T18:58:29.898Z",
-        "image": "dishes-images/sxcz2.jpeg"
+        "updated": "2021-04-04T11:51:11.251Z",
+        "image": "dishes-images/sxcz2.jpeg",
+        "slug": "dill-potatoes-with-quark-pellkartoffel-mit-dill-und-quark"
     }
 },
 {
@@ -271,8 +310,9 @@
         "preparation_time": "00:00:23",
         "is_vegetarian": true,
         "created": "2021-01-23T19:00:26.652Z",
-        "updated": "2021-01-23T19:00:26.652Z",
-        "image": "dishes-images/204995.jpeg"
+        "updated": "2021-04-04T11:51:11.255Z",
+        "image": "dishes-images/204995.jpeg",
+        "slug": "sweet-vanilla-dumplingsgermknodel"
     }
 },
 {
@@ -286,8 +326,9 @@
         "preparation_time": "00:00:33",
         "is_vegetarian": false,
         "created": "2021-01-23T19:01:37.361Z",
-        "updated": "2021-01-23T19:01:37.361Z",
-        "image": "dishes-images/falscher-hase.jpeg"
+        "updated": "2021-04-04T11:51:11.260Z",
+        "image": "dishes-images/falscher-hase.jpeg",
+        "slug": "falscher-hase-falscher-hase"
     }
 },
 {
@@ -301,8 +342,9 @@
         "preparation_time": "00:00:59",
         "is_vegetarian": false,
         "created": "2021-01-23T19:02:41.470Z",
-        "updated": "2021-01-23T19:02:41.470Z",
-        "image": "dishes-images/800_KASSLER_CHOPS1.jpeg"
+        "updated": "2021-04-04T11:51:11.265Z",
+        "image": "dishes-images/800_KASSLER_CHOPS1.jpeg",
+        "slug": "kassler-rippchen-kassler-rippchen"
     }
 },
 {
@@ -316,8 +358,9 @@
         "preparation_time": "00:02:25",
         "is_vegetarian": false,
         "created": "2021-01-23T19:03:34.378Z",
-        "updated": "2021-01-23T19:03:34.378Z",
-        "image": "dishes-images/omas-beste-frikadellen.jpeg"
+        "updated": "2021-04-04T11:51:11.269Z",
+        "image": "dishes-images/omas-beste-frikadellen.jpeg",
+        "slug": "meat-balls-frikadellen"
     }
 },
 {
@@ -331,8 +374,9 @@
         "preparation_time": "00:00:15",
         "is_vegetarian": false,
         "created": "2021-01-23T19:04:46.045Z",
-        "updated": "2021-01-23T19:04:46.045Z",
-        "image": "dishes-images/pellkartoffeln-kochen-b.jpeg"
+        "updated": "2021-04-04T11:51:11.274Z",
+        "image": "dishes-images/pellkartoffeln-kochen-b.jpeg",
+        "slug": "pellkartoffel-pellkartoffel"
     }
 },
 {
@@ -346,8 +390,41 @@
         "preparation_time": "00:00:17",
         "is_vegetarian": false,
         "created": "2021-01-23T19:05:23.859Z",
-        "updated": "2021-01-23T19:05:23.859Z",
-        "image": "dishes-images/indwexex.jpeg"
+        "updated": "2021-04-04T11:51:11.279Z",
+        "image": "dishes-images/indwexex.jpeg",
+        "slug": "pork-knuckles-schweinshaxen"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 23,
+    "fields": {
+        "name": "Test French",
+        "menu": "French menu",
+        "description": "kek",
+        "price": "0.00",
+        "preparation_time": "00:00:00",
+        "is_vegetarian": true,
+        "created": "2021-03-24T11:26:55.660Z",
+        "updated": "2021-04-04T11:51:11.283Z",
+        "image": "dishes-images/2_20200817_143158.jpg",
+        "slug": "test-french"
+    }
+},
+{
+    "model": "menus.dish",
+    "pk": 24,
+    "fields": {
+        "name": "Test French",
+        "menu": "French menu",
+        "description": "kek",
+        "price": "0.00",
+        "preparation_time": "00:00:00",
+        "is_vegetarian": true,
+        "created": "2021-03-24T11:27:02.214Z",
+        "updated": "2021-04-04T11:51:11.288Z",
+        "image": "dishes-images/2_20200817_143158_63TfdV2.jpg",
+        "slug": "test-french"
     }
 }
 ]

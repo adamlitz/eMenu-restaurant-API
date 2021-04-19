@@ -8,7 +8,8 @@ class Menu(models.Model):
     description = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    slug = models.SlugField(max_length=150, null=True, blank=True)
+    slug = models.SlugField(max_length=150, null=False, unique=True)
+    image = models.ImageField(upload_to='menus-images/', default='menu.jpg', blank=True)
 
     def __str__(self):
         return self.name
@@ -16,8 +17,11 @@ class Menu(models.Model):
     def save(self, *args, **kwargs):
         """
         Create a slug field
+        Change the menu name to a title and validate
         """
         self.slug = slugify(self.name)
+        self.name = self.name.lower().capitalize()
+
         super(Menu, self).save(*args, **kwargs)
 
 
@@ -35,7 +39,7 @@ class Dish(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='dishes-images/', default='dish.jpg', blank=True)
-    slug = models.SlugField(max_length=150, null=True, blank=True)
+    slug = models.SlugField(max_length=150, null=False, unique=True)
 
     def __str__(self):
         return self.name
@@ -43,6 +47,9 @@ class Dish(models.Model):
     def save(self, *args, **kwargs):
         """
         Create a slug field
+        Change the dish name to a title and validate
         """
         self.slug = slugify(self.name)
+        self.name = self.name.lower().capitalize()
+
         super(Dish, self).save(*args, **kwargs)

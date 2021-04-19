@@ -60,7 +60,7 @@ class MenuSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Menu
-        fields = ['name', 'dishes', 'description']
+        fields = ['name', 'dishes', 'description', 'image']
 
     def create(self, validated_data):
         """
@@ -103,4 +103,4 @@ class PartialMenuInfoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Menu
-        fields = '__all__'
+        fields = ['name', 'dishes', 'description', 'created', 'updated']
