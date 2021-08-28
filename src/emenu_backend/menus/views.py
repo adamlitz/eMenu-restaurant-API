@@ -41,7 +41,7 @@ class MenuViewSet(viewsets.ModelViewSet):
         Only non-public API users will see empty menus.
         """
         if not request.user.is_authenticated:
-            queryset = self.get_queryset().filter(dishes__isnull=False)
+            queryset = self.get_queryset().filter(dishes_count__gt=0)
             filtered_queryset = self.filter_queryset(queryset)
         else:
             queryset = self.get_queryset()
